@@ -1,0 +1,10 @@
+useDynLib("FAS", .registration = TRUE)
+
+import("Matrix")
+importFrom("pracma", "inv")
+importFrom("graphics", "segments")
+importFrom("methods", "new")
+importFrom("stats", "rnorm", "approx")
+
+export(lassofit)
+export(factorsparsetest)
